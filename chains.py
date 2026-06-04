@@ -1,6 +1,9 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
 from langchain_deepseek import ChatDeepSeek
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 reflection_prompt = ChatPromptTemplate.from_messages(
